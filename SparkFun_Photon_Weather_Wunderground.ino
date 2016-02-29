@@ -146,6 +146,10 @@ void printInfo()
   Serial.print("hPa, ");
   Serial.print(inches);
   Serial.println("in.Hg");
+
+//Daves Code Here
+Particle.publish("Testing: Nick can you see me on your dashboard?");
+
   //The MPL3115A2 outputs the pressure in Pascals. However, most weather stations
   //report pressure in hectopascals or millibars. Divide by 100 to get a reading
   //more closely resembling what online weather reports may say in hPa or mb.
